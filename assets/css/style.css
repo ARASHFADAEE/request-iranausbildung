@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+/* root variable*/
+
+:root{
+    --color-primary:;
+    --color-navbar:#f8f8f8;
+    --color-secondary-dark:#4600cf;
+    --color-secondary-light:#decdff;
+    --color-heading:#000;
+    --color-body:#333333;
+
+
+}
