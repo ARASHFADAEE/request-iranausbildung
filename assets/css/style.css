@@ -152,6 +152,10 @@ h2{
     
 }
 
+
+.nav__expanded{
+    
+}
 /* nav responsive */
 
 @media screen  and (min-width:768px){
