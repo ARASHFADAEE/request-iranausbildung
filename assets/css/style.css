@@ -203,21 +203,29 @@ h2{
     background-color: #000;
     margin:5px 0 ;
     border-radius: 5px;
+    transition: all 0.4s ease-out;
 }
 
 .nav.nav__expanded .bar-one{
+    translate: (-9px 6px );
     transform: rotate(-45deg);
+
 
 }
 .nav.nav__expanded .bar-two{
-    transform: rotate(-20deg);
     opacity: 0;
+    transform: translateX(-20px); 
+    
 
 
 }
 
 
 .nav.nav__expanded .bar-three{
-    transform: rotate(-45deg);
+    transform: rotate(45deg);
+    translate: (-9px 6px );
+    margin: 8px 0 ;
+
+
 
 }
