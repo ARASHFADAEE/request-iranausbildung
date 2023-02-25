@@ -18,7 +18,8 @@
     --color-secondary-light:#decdff;
     --color-heading:#000;
     --color-body:#333333;
-    --color-white:#ffff
+    --color-white:#ffff;
+    --color-bg-body:#f1f3f4;
 
 
 }
@@ -27,11 +28,12 @@ html{
 
 }
 body{
+    background-color: var(--color-bg-body);
     color: var(--color-body);
     font-size: 1.6rem;
 }
 
-
+/* add font style */
 
 h1,
 h2,
@@ -49,6 +51,8 @@ h1{
 h2{
     font-size: 2.2rem;
 }
+
+/* responsive style */
 
 @media screen and  (min-width:1024px) 
 {
@@ -73,6 +77,8 @@ h2{
 
     
 }
+
+/* add button style  */
 
 .btn{
     outline: 0;
@@ -102,3 +108,55 @@ h2{
     font-size: 1.6rem;
 }
 
+/* navbar*/
+
+.main-header{
+    background-color: var(--color-navbar);
+
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+
+}
+.nav__list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+
+
+}
+
+.nav__item{
+    text-decoration: none;
+    color: #444; 
+}
+
+.nav__toggler{
+    background-color: gold;
+    
+}
+
+/* nav responsive */
+
+@media screen  and (min-width:768px){
+    .nav__toggler{
+        display: none;
+    }
+    .nav__list{
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+    }
+    .nav__item{
+        margin-left: 2rem;
+        font-size: 1.6rem;
+    }
+
+    
+}
