@@ -133,8 +133,18 @@ h2{
 }
 
 .nav__item{
+    margin-bottom: 1rem;
+    border-bottom:1px solid #ccc  ;
+}
+
+.nav__item >a{
     text-decoration: none;
     color: #444; 
+    display: block;
+    padding-bottom: 1rem;
+}
+.nav__item>a:hover{
+    color: var(--color-primary);
 }
 
 .nav__toggler{
@@ -156,6 +166,7 @@ h2{
     .nav__item{
         margin-left: 2rem;
         font-size: 1.6rem;
+        border: 0;
     }
 
     
