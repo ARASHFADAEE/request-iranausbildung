@@ -12,12 +12,13 @@
 /* root variable*/
 
 :root{
-    --color-primary:;
+    --color-primary:#6a26f0;
     --color-navbar:#f8f8f8;
     --color-secondary-dark:#4600cf;
     --color-secondary-light:#decdff;
     --color-heading:#000;
     --color-body:#333333;
+    --color-white:#ffff
 
 
 }
@@ -61,5 +62,43 @@ h2{
         font-size: 3.5rem;
     }
 
+    .btn{
+        font-size: 1.6rem;
+    }
+    .btn-block{
+        font-size: 2rem;
+    }
+
+
+
     
 }
+
+.btn{
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 2rem 2.5rem;
+    margin: 1rem 0;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 1.4rem;
+     
+}
+
+.btn--primary{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn--secondary-light{
+    background-color: var(--color-secondary-light);
+}
+
+
+.btn-block{
+    width: 100%;
+    font-size: 1.6rem;
+}
+

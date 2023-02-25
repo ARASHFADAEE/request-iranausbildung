@@ -11,6 +11,6 @@
     src: url("../font/iranyekan/iranyekanwebbold.woff");
 }
 
-body{
+body,button{
     font-family: "Iranyekan";
 }
