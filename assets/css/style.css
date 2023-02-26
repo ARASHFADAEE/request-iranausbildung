@@ -75,6 +75,7 @@ h2{
 
 
 
+
     
 }
 
@@ -201,6 +202,7 @@ h2{
         border: 0;
     }
 
+
     
 }
 
@@ -287,4 +289,9 @@ input{
 
 .order{
     margin-top: 50px;
+}
+
+.input-item{
+    margin-right: 20px;
+     margin-left: 20px;
 }
