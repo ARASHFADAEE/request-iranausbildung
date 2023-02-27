@@ -295,3 +295,16 @@ input{
     margin-right: 20px;
      margin-left: 20px;
 }
+
+.footer-box{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer{
+    background-color: var(--color-navbar);
+    margin-top: 50px;
+
+}
