@@ -296,6 +296,11 @@ input{
      margin-left: 20px;
 }
 
+
+
+/* start footer style */
+
+
 .footer-box{
     width: 100%;
     height: auto;
@@ -306,6 +311,8 @@ input{
     padding: 40px;
 
 }
+
+
 
 .footer{
     background-color: var(--color-navbar);
@@ -333,6 +340,13 @@ input{
     height: auto;
 
 }
+
+/* End footer style */
+
+
+
+/*  responsive footer style  */
+
 
 
 @media (max-width: 800px) {
@@ -366,3 +380,6 @@ input{
         margin-top: 0px;
     }
   }
+
+
+  /* End   responsive footer style  */
