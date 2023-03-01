@@ -335,6 +335,11 @@ input{
       flex-direction: column;
       justify-content: center;
       flex: 100%;
+      margin-top: 300px;
+
+    }
+    .section{
+        padding-top: 50px;
     }
     input{
     width: 100%;
@@ -347,5 +352,9 @@ input{
     }
     #lable{
 
+    }
+
+    .order{
+        margin-top: 0px;
     }
   }
