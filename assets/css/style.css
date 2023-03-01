@@ -297,6 +297,7 @@ input{
 }
 
 .footer-box{
+    width: 100%;
     height: auto;
     display: flex;
     align-items: center;
@@ -313,19 +314,19 @@ input{
 
 
 .section1{
-    width: 20%;
+    flex: 20%;
     height: auto;
 
 }
 
 .section2{
-    width: 40%;
+    flex: 40%;
     height: auto;
 
 }
 
 .section3{
-    width: 40%;
+    flex: 40%;
     height: auto;
 
 }
@@ -333,6 +334,7 @@ input{
     .footer-box {
       flex-direction: column;
       justify-content: center;
+      flex: 100%;
     }
     input{
     width: 100%;
