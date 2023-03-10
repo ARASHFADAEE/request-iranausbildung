@@ -387,3 +387,8 @@ input{
 
 
   /* true massage */
+
+  #mssgtrue{
+    color: #3bff31;
+    padding-bottom: 60px;
+  }

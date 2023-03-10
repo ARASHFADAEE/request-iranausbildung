@@ -66,7 +66,7 @@ $email = $_POST['email'];
 $sql = "INSERT INTO users (name, email) VALUES ('$name', '$email')";
 
 if ($conn->query($sql) === TRUE) {
-  echo "اطلاعات با موفقیت ذخیره شد.";
+  echo "<p id= 'mssgtrue'>اطلاعات با موفقیت ذخیره شد.</p>";
 } else {
   echo "خطا در ذخیره اطلاعات: " . $conn->error;
 }
