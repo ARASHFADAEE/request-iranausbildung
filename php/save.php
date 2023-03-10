@@ -13,8 +13,8 @@
     <!-- start header  -->
     <header class="main-header">
         <nav class="nav ">
-            <a href="">
-                <img src="./assets/img/logoausbildung.png" alt="">
+            <a href="../index.html">
+                <img src="../assets/img/logoausbildung.png" alt="">
             </a>
             <div class="nav__toggler">
                 <div class="bar bar-one"></div>
@@ -39,6 +39,9 @@
         <!-- start section input -->
         <div class="wrapper container">
             <div class="box">
+
+
+
                     
 <?php
 
@@ -48,7 +51,7 @@
 $host = 'localhost';
 $username = 'root';
 $password = '';
-$dbname = 'save';
+$dbname = 'data';
 
 // اتصال به دیتابیس
 $conn = new mysqli($host, $username, $password, $dbname);
@@ -58,20 +61,27 @@ if ($conn->connect_error) {
   die("اتصال به دیتابیس ناموفق بود: " . $conn->connect_error);
 }
 
+
+
 // دریافت داده‌های فرم
 $name = $_POST['name'];
 $email = $_POST['email'];
+
 
 // اضافه کردن داده‌ها به دیتابیس
 $sql = "INSERT INTO users (name, email) VALUES ('$name', '$email')";
 
 if ($conn->query($sql) === TRUE) {
   echo "<p id= 'mssgtrue'>اطلاعات با موفقیت ذخیره شد.</p>";
+  echo "<p id='mssgtrue'>لینک دریافت ویدیو </p>";
+  echo "            <video width='auto' src='https://codemim.ir/wp-content/uploads/2022/12/makhfikardanplugin.mp4' controls></video>
+  ";
 } else {
   echo "خطا در ذخیره اطلاعات: " . $conn->error;
 }
 
 // قطع اتصال به دیتابیس
+
 $conn->close();
 ?>
 
@@ -104,7 +114,7 @@ $conn->close();
                 </div>
                 <div class=" section section3">
                     <a href="">
-                        <img src="./assets/img/enamad1.png" alt="">
+                        <img src="../assets/img/enamad1.png" alt="">
                     </a>
                     <a href="">
                         <img src="" alt="">
