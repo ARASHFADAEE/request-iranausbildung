@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="rtl" dir="rtl">
 <head>
@@ -5,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مشاوره ایران آوسبیلدونگ</title>
-    <link rel="stylesheet" href="./assets/css/font.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/font.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
     <!-- start header  -->
@@ -33,26 +34,53 @@
     <!-- End Header -->
 
     <main>
-
-        <h1 id="h1-section" >فرم مشاوره آوسبیلدونگ</h1>
+        
+    <h1 id="h1-section" >فرم مشاوره آوسبیلدونگ</h1>
         <!-- start section input -->
         <div class="wrapper container">
             <div class="box">
-                <form action="./php/save.php" method="post">
-                    <label id="lable"  for="name"> نام و نام خانوادگی:</label>
-                <input class="input-item" type="text" id="name" name="name" >
-                <label id="lable"  >ایمیل:</label>
-                <input class="input-item" type="email" name="email" >
-                <br>
-                <button class="btn btn--secondary-light order " >ذخیره</button>
+                    
+<?php
 
 
-                </form>
+
+// اطلاعات دیتابیس
+$host = 'localhost';
+$username = 'root';
+$password = '';
+$dbname = 'save';
+
+// اتصال به دیتابیس
+$conn = new mysqli($host, $username, $password, $dbname);
+
+// بررسی اتصال
+if ($conn->connect_error) {
+  die("اتصال به دیتابیس ناموفق بود: " . $conn->connect_error);
+}
+
+// دریافت داده‌های فرم
+$name = $_POST['name'];
+$email = $_POST['email'];
+
+// اضافه کردن داده‌ها به دیتابیس
+$sql = "INSERT INTO users (name, email) VALUES ('$name', '$email')";
+
+if ($conn->query($sql) === TRUE) {
+  echo "اطلاعات با موفقیت ذخیره شد.";
+} else {
+  echo "خطا در ذخیره اطلاعات: " . $conn->error;
+}
+
+// قطع اتصال به دیتابیس
+$conn->close();
+?>
+
+
+
+
                 
             </div>
         </div>
-
-
 
 
 
@@ -92,3 +120,4 @@
     </footer>
 </body>
 </html>
+
